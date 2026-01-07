@@ -110,32 +110,33 @@ Models automatically generate comparison plots:
 ```
 satellite-property-valuation/
 │
-├── 📄 README.md                          # This file
-├── 📄 requirements.txt                   # Python dependencies
+├── processed_data/
+│   ├── X_train.csv
+│   ├── y_train.csv
+│   ├── X_test.csv
+│   ├── meta_train.csv
+│   ├── meta_test.csv
+│   └── scaler.pkl
+│
+├── visualizations/
+│   ├── eda_price_dist.png
+│   ├── eda_log_price_dist.png
+│   ├── eda_correlation.png
+│   ├── eda_grade_vs_price.png
+│   ├── eda_sqft_vs_price.png
+│   └── eda_geo_price.png
+│
 ├── 23118052_final.csv
 ├── 23118052_report.pdf
-├── data_fetcher.py                   # Download images from Mapbox API
-├── data_fetcher_test.py              # Download test images
-├── merged_preprocessing.ipynb        # Feature engineering & EDA
-├── training.ipynb                   # Model training & comparison
-│
-├── processed_data/
-│   ├── X_train.csv                   # Scaled training features (16,209 × 46)
-│   ├── y_train.csv                   # Training targets (prices)
-│   ├── X_test.csv                    # Scaled test features
-│   ├── meta_train.csv                # Training metadata (image paths)
-│   ├── meta_test.csv                 # Test metadata
-│   └── scaler.pkl                    # StandardScaler (for inference)
-|
-├── visualizations/
-│       ├── eda_price_dist.png
-│       ├── eda_log_price_dist.png
-│       ├── eda_correlation.png
-│       ├── eda_grade_vs_price.png
-│       ├── eda_sqft_vs_price.png
-│       └── eda_geo_price.png
-│
+├── README.md
+├── data_fetcher.py
+├── data_fetcher_test.py
+├── merged_preprocessing.ipynb
+├── requirements.txt
+├── test.csv
+├── train.csv
 └── training.ipynb
+
 ```
 
 ---
