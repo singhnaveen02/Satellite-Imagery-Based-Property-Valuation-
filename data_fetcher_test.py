@@ -7,7 +7,7 @@ from tqdm import tqdm  # Progress bar
 # --- CONFIGURATION ---
 API_KEY = "pk.eyJ1Ijoicml0ZXNoaWl0ciIsImEiOiJjbWp6bjYydWI2YjZkM2ZzNWRnZWZ4bzRmIn0.6Jh2ozJzSwCr-I3jihYI0w" 
 INPUT_FILE = "C:/Users/singh/Codes/CDC_PROJECT/gemini/test.csv"  # 👈 changed from train_original.csv
-OUTPUT_DIR = "satellite_images_test"  # 👈 separate folder for test images
+OUTPUT_DIR = "satellite_images"  # 👈 separate folder for test images
 BASE_URL = "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static"
 
 # Create output directory if it doesn't exist
@@ -64,3 +64,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
