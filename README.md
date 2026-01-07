@@ -112,33 +112,22 @@ satellite-property-valuation/
 │
 ├── 📄 README.md                          # This file
 ├── 📄 requirements.txt                   # Python dependencies
+├── 23118052_final.csv
+├── 23118052_report.pdf
+├── data_fetcher.py                   # Download images from Mapbox API
+├── data_fetcher_test.py              # Download test images
+├── merged_preprocessing.ipynb        # Feature engineering & EDA
+├── training.ipynb                   # Model training & comparison
 │
-├── 📊 Data Files
-│   ├── train.csv                         # Training data (16,209 properties)
-│   ├── test.csv                          # Test data for predictions
-│   └── submission.csv                    # Final predictions (output)
-│
-├── 📷 Satellite Images
-│   ├── satellite_images/                 # 16,209 training images (600×600px)
-│   │   └── {id}.jpg
-│   └── satellite_images_test/            # Test images (optional)
-│       └── {id}.jpg
-│
-├── 🔧 Processing Pipelines
-│   ├── data_fetcher.py                   # Download images from Mapbox API
-│   ├── data_fetcher_test.py              # Download test images
-│   ├── merged_preprocessing.ipynb        # Feature engineering & EDA
-│   └── training4.ipynb                   # Model training & comparison
-│
-├── 💾 Processed Data (Generated)
-│   ├── processed_data/
-│   │   ├── X_train.csv                   # Scaled training features (16,209 × 46)
-│   │   ├── y_train.csv                   # Training targets (prices)
-│   │   ├── X_test.csv                    # Scaled test features
-│   │   ├── meta_train.csv                # Training metadata (image paths)
-│   │   ├── meta_test.csv                 # Test metadata
-│   │   └── scaler.pkl                    # StandardScaler (for inference)
-│   └── visualizations/
+├── processed_data/
+│   ├── X_train.csv                   # Scaled training features (16,209 × 46)
+│   ├── y_train.csv                   # Training targets (prices)
+│   ├── X_test.csv                    # Scaled test features
+│   ├── meta_train.csv                # Training metadata (image paths)
+│   ├── meta_test.csv                 # Test metadata
+│   └── scaler.pkl                    # StandardScaler (for inference)
+|
+├── visualizations/
 │       ├── eda_price_dist.png
 │       ├── eda_log_price_dist.png
 │       ├── eda_correlation.png
@@ -146,12 +135,7 @@ satellite-property-valuation/
 │       ├── eda_sqft_vs_price.png
 │       └── eda_geo_price.png
 │
-├── 🤖 Model Weights (Generated)
-│   ├── Tabular_Baseline_best.pth         # Best tabular model
-│   └── Multimodal_Gated_best.pth         # Best multimodal model ⭐
-│
-└── 📖 Documentation
-    └── SATELLITE_VALUATION_REPORT.pdf    # Comprehensive technical report
+└── training.ipynb
 ```
 
 ---
